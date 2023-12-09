@@ -5,7 +5,7 @@
   xmlns:th="http://www.thymeleaf.org"
   xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
   
-  <th:head th:replace="/head :: head"></th:head>
+  <th:head th:replace="head.html :: head"></th:head>
 
   <body>
 
@@ -50,7 +50,7 @@
       </script>
     </div>
 
-    <th:header th:replace="/header :: header"></th:header>
+    <th:header th:replace="header.html :: header"></th:header>
 
     <div id="loginModal"
       class="modal">
@@ -219,7 +219,7 @@
       </section>
     </main>
 
-    <th:footer th:replace="/footer :: footer"></th:footer>
+    <th:footer th:replace="footer.html :: footer"></th:footer>
 
     <script src="../../js/color-modes.js"></script>
     <script src="../../js/registro-login.js"></script>
