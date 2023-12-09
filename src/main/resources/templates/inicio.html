@@ -5,10 +5,10 @@
   xmlns:th="http://www.thymeleaf.org"
   xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 
-  <head th:replace="/fragments/head :: head" </head></head>
+  <th:head th:replace="head.html :: head"></th:head>
 
   <body>
-    <header th:replace="/fragments/header :: header" </header></header>
+    <th:header th:replace="header.html :: header"></header>
     <div id="deleteModal"
       class="modal">
       <div class="modal-content">
@@ -132,7 +132,7 @@
       </section>
     </main>
 
-    <footer th:replace="/fragments/footer :: footer" </footer></footer>
+    <th:footer th:replace="footer.html :: footer"></th:footer>
 
     <script src="../../js/color-modes.js"></script>
     <script src="../../js/borrar.js"></script>
